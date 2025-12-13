@@ -2,21 +2,20 @@ org 100h
 
 mov al,10
 mov ah,20
-add al,ah      ; AL = 30
+add al,ah     
 
 mov bl,10
-div bl         ; AH = remainder, AL = quotient
-               ; For 30 ? AL = 3, AH = 0
-
-add al,30h     ; Convert '3'
-add ah,30h     ; Convert '0'
+div bl        
+               
+add al,30h     
+add ah,30h    
 
 mov dl,al
 mov ah,02h
-int 21h        ; print '3'
+int 21h      
 
 mov dl,ah
 mov ah,02h
-int 21h        ; print '0'
+int 21h        
 
 int 20h
