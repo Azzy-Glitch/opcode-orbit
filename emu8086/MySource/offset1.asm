@@ -1,0 +1,24 @@
+org 100h                
+
+mov ah, 09h
+mov dx, offset msg1
+int 21h
+
+mov dx, offset msg2
+int 21h
+
+mov dx, offset msg3
+int 21h
+
+mov dx, offset msg4
+int 21h
+
+mov ah, 4Ch           
+int 21h
+
+msg1 db "Abdul Aziz$"
+msg2 db "BSCS-3C$"
+msg3 db "R1F24UBSCS113$"
+msg4 db "UCP$"
+               
+ret

@@ -1,14 +1,14 @@
 org 100h
 
-mov ax,10
+mov ax,5
 mov bx,9
+
 mul bx
 
-add al,30h
+mov ah,30h
+add dh,ah
 
-mov dl,al
 mov ah,02h
-
 int 21h
 int 20h
 
